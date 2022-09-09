@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="100dp"
+    tools:context=".ForgotPass">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Enter e-mail"
+        android:inputType="textWebEmailAddress"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#D8D7D7"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <Button
+        android:id="@+id/sendLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Send Link"
+        android:background="@drawable/rounded_edittext"
+        />
+
+
+</LinearLayout>

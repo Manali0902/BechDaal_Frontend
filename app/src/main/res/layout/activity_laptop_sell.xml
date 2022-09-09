@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".LaptopSell">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/next">
+        <LinearLayout
+            android:id="@+id/ln1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:text="* marked fields are mandatory"
+                android:textColor="#D900FF"
+                android:layout_marginTop="20dp"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="Select Type"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="*"
+                    android:textColor="#D900FF"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/laptopType"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_design" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="Brand"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="*"
+                    android:textColor="#D900FF"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+            <Spinner
+                android:id="@+id/brand"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_design" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="Model"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="*"
+                    android:textColor="#D900FF"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/model"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_design" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="Age of Device"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="*"
+                    android:textColor="#D900FF"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/year"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_design" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="Add Features"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="*"
+                    android:textColor="#D900FF"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/features"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_design"
+                android:padding="12dp"
+                android:hint="(Ex- brand, model, age, type, etc)"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="Give Details"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="*"
+                    android:textColor="#D900FF"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_design"
+                android:padding="12dp"
+                android:hint="Describe what you are selling"/>
+
+
+            <Button
+                android:id="@+id/image"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Upload an Image"
+                android:fontFamily="@font/muli_regular"
+                android:backgroundTint="#F0B2FB"
+                android:textColor="@color/white"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="Set Price (in Rupees)"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="*"
+                    android:textColor="#D900FF"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_design"
+                android:padding="12dp"
+                android:inputType="number"
+                android:hint="Only enter digit without ',' "/>
+
+            <Button
+                android:id="@+id/map"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Set Location"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/muli_regular"
+                android:backgroundTint="#F0B2FB"
+                android:textColor="@color/white"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="*"
+                    android:textColor="#D900FF"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_design"
+                android:padding="12dp"
+                android:hint="Your name to be displayed to buyer"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="Contact Number"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli"
+                    android:text="*"
+                    android:textColor="#D900FF"
+                    android:layout_marginTop="20dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_design"
+                android:padding="12dp"
+                android:inputType="phone"
+                android:hint="10 digit No with no spaces and '+91' "/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Next"
+        android:fadeScrollbars="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

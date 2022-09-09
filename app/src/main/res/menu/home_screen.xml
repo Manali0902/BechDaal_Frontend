@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeScreen">
+    <item
+        android:id="@+id/action_favorites"
+        android:orderInCategory="100"
+        android:title="Favorites"
+        android:visible="true"
+        />
+    <item
+        android:id="@+id/action_bChats"
+        android:orderInCategory="100"
+        android:title="Buying Chats"/>
+    <item
+        android:id="@+id/action_sChats"
+        android:orderInCategory="100"
+        android:title="Selling Chats"/>
+</menu>
